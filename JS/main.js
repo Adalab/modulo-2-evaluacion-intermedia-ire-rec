@@ -25,7 +25,6 @@ function handleClick(ev){
     ev.preventDefault();
     pickUpValue();
     getRandomNumber(100);
-
 }
 
 
