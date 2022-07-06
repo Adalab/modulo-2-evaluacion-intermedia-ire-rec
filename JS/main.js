@@ -1,31 +1,40 @@
 'use strict';
 
+//ELEMENTOS
 const btn = document.querySelector('.js-btn');
 const choose = document.querySelector('.js-choose');
-const writeNumberP1 = document.querySelector('.js-writeNumberP1');
-const numberAttemptP2 = document.querySelector('.js-numberAttemptP2');
+const message = document.querySelector('.js-message');
+const attempt = document.querySelector('.js-attempt');
 
 
-const chooseNumber=()=>{
-if(chooseValue===getRandomNumber);
-else('Has ganado campeona!!!');
+//FUNCIONES ESPECÍFICAS
+const valueChoose = choose.value;
+
+
+function compareValues(){
+message.innerHTML= "has ganado campeona";
+
+if (valueChoose > getRandomNumber(100));
+message.innerHTML="Demasiado alto";
+
+if (valueChoose < getRandomNumber(100));
+message.innerHTML="Demasiado bajo";
+return compareValues();
+
 }
-
 
 function getRandomNumber(max) {
-    return Math.ceil(Math.random() * max);       
-   }
-
-function pickUpValue(){
-    const chooseValue = choose.value;
-    console.log(chooseValue);    
+    return Math.ceil(Math.random() * max);
 }
+   console.log (getRandomNumber(100));
+
+//FUNCIONES GLOBALES
 
 function handleClick(ev){
     ev.preventDefault();
-    pickUpValue();
-    getRandomNumber(100);
+    compareValues();
+       
 }
 
-
+//EVENTOS
 btn.addEventListener("click", handleClick);
