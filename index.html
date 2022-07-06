@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="/CSS/reset.css" />
     <title>Evaluación Intermedia</title>
   </head>
+
   <body>
-    <h1>Adivina el número</h1>
-    <form action="/signup" method="post">  
-    <label for="number">Introduce aquí el número</label>
-    <imput type="number">
-    <button>Prueba</button>
+    <main>
+    <h1 class="title">Adivina el número</h1>
+
+    <form action="/signup" method="post" class="form"> 
+      <fieldset class="fieldset">
+        <label for="number" class="label">Introduce aquí tu número</label>      
+        <input id="number" type="text" name="number" class="js-choose choose"/>
+      </fieldset>      
+  
+    <button class="js-btn btn">Prueba</button>
+
     </form>
 
-    <p>Escribe el número y dale prueba</p>
-    <p>Número de intentos: 0</p>
-
+    <p class="js-writeNumberP1 writeNumber">Escribe el número y dale prueba</p>
+    <p class="js-numberAttemptP2 numberAttempt">Número de intentos: 0</p>
+</main>
     <script type="text/javascript" src="/JS/main.js"></script>
 </body>

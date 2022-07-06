@@ -1,0 +1,24 @@
+.title{
+    font-size: 30px;
+}
+.fieldset{
+    display: flex;
+    flex-direction: column;
+}
+.choose{
+    width: 100px;
+    
+}
+
+.btn{
+    background-color: aqua;
+}
+
+.writeNumberP1{
+    font-size: 18px;
+}
+
+.numberAttempP2{
+    font-size: 18px;
+
+}
